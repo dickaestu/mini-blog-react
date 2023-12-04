@@ -1,9 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  purge: {
-    enabled: true,
-    content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
-  },
+  content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   presets: [],
   darkMode: "media", // or 'class'
   theme: {
