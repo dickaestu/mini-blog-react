@@ -65,7 +65,7 @@ const Header = () => {
                 name="search"
                 id="search"
                 placeholder="Search"
-                className="border border-gray-100 rounded-lg py-2 pl-10 pr-6 bg-white placeholder-gray-200 text-gray-900 appearance-none w-full block focus:outline-none"
+                className="border border-gray-100 rounded-lg py-2 pl-10 pr-6 bg-white placeholder-gray-300 text-gray-900 appearance-none w-full block focus:outline-none"
               />
             </div>
             {/* End Search Field */}
