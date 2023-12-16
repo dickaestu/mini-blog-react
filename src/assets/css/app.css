@@ -2,3 +2,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .btn-categories {
+    @apply bg-none text-primary rounded-full py-3 px-5 rounded-full font-semibold;
+  }
+
+  .btn-categories:hover {
+    @apply bg-primary text-white;
+  }
+
+  .btn-categories-active {
+    @apply bg-primary text-white;
+  }
+}
+
+@layer utilities {
+  .stretched-link {
+    @apply absolute inset-0 z-10 cursor-pointer;
+  }
+}

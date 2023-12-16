@@ -11,6 +11,7 @@ const ButtonCustom = ({
   width = "w-full",
   children,
   path = "/",
+  border = "border-none",
 }) => {
   return (
     <div className="inline-block flex-none">
@@ -24,6 +25,7 @@ const ButtonCustom = ({
           bgHover,
           width,
           textHover,
+          border,
           `px-5 py-3 flex justify-center text-center items-center focus:outline-none rounded-md`,
         ].join(" ")}
       >
