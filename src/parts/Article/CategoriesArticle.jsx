@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import CardCategories from "./CardCategories";
+import ButtonCustom from "../../components/ButtonCustom/ButtonCustom";
 
 const categories = [
   {
@@ -33,7 +34,7 @@ const CategoriesArticle = () => {
   const [active, setActive] = useState(0);
   return (
     <div className="mb-24">
-      <ul className="flex flex-row gap-2 mb-6">
+      <ul className="flex overflow-x-auto md:flex-row md:flex-nowrap gap-2 mb-6">
         {categories.map((item) => {
           return (
             <li key={item.id}>
@@ -55,6 +56,17 @@ const CategoriesArticle = () => {
           .map((_, index) => {
             return <CardCategories key={index} />;
           })}
+      </div>
+      <div className="text-center">
+        <ButtonCustom
+          bgColor="bg-none"
+          textColor="text-[#111827]"
+          bgHover="hover:bg-[#D2D5DA]"
+          textHover="hover:text-[#111827]"
+          border="border border-[#D2D5DA]"
+        >
+          See All
+        </ButtonCustom>
       </div>
     </div>
   );

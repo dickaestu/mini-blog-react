@@ -5,7 +5,7 @@ const CardCategories = () => {
   return (
     <div className="relative w-full group">
       <div className="flex flex-row gap-3 w-full">
-        <div className="w-[100px] h-[100px] relative">
+        <div className="w-32 h-auto relative">
           <div className="absolute w-full h-full inset-0 bg-black opacity-0 group-hover:opacity-20 rounded-lg"></div>
           <img
             src="/assets/images/contents/article-1.png"
@@ -31,10 +31,12 @@ const CardCategories = () => {
               />
             </div>
             <div className="">
-              <p className="text-primary font-medium text-sm">
+              <p className="text-primary font-medium text-sm line-clamp-1">
                 Darrell Steward
               </p>
-              <p className="text-gray-400 text-xs">Software Developer</p>
+              <p className="text-gray-400 text-xs line-clamp-1">
+                Software Developer
+              </p>
             </div>
           </div>
         </div>
