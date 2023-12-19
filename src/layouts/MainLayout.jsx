@@ -7,7 +7,6 @@ const MainLayout = ({ children }) => {
     <>
       <Header />
       {children}
-      <div className="h-screen"></div>
       <Footer />
     </>
   );
